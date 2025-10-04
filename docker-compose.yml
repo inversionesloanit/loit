@@ -20,7 +20,7 @@ services:
       dockerfile: Dockerfile
     container_name: webloan_backend
     ports:
-      - "3000:3000"
+      - "3001:3000" # Cambiado a 3001 para evitar posibles conflictos
     environment:
       MONGODB_URI: mongodb://mongo:27017/payload
       PORT: 3000
