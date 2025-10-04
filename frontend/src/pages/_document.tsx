@@ -23,7 +23,7 @@ export default class CustomDocument extends Document {
           />
           <link
             rel="shortcut icon"
-            href="https://adonai.inverloan.com/media/favicono-1.ico"
+            href="http://148.113.136.150:3001/media/favicono-1.ico"
           />
           <meta
             name="google-site-verification"

@@ -31,7 +31,7 @@ const PageHeroSection: React.FC<HeaderProps> = ({
         className
       )}
       style={{
-        backgroundImage: `url(https://adonai.inverloan.com/media/nosotros.jpg)`,
+        backgroundImage: `url(http://148.113.136.150:3001/media/nosotros.jpg)`,
       }}
     >
       <div className="relative flex flex-col items-center justify-center w-full">

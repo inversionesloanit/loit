@@ -229,10 +229,10 @@ export const homeTwoHeroBanner = [
     btnUrl: '/search',
     image: {
       mobile: {
-        url: 'https://adonai.inverloan.com/media/inicio-loan.webp',
+        url: 'http://148.113.136.150:3001/media/inicio-loan.webp',
       },
       desktop: {
-        url: 'https://adonai.inverloan.com/media/inicio-loan.webp',
+        url: 'http://148.113.136.150:3001/media/inicio-loan.webp',
       },
     },
   },
@@ -244,10 +244,10 @@ export const homeTwoHeroBanner = [
     btnUrl: '/search',
     image: {
       mobile: {
-        url: 'https://adonai.inverloan.com/media/inicio-loan.webp',
+        url: 'http://148.113.136.150:3001/media/inicio-loan.webp',
       },
       desktop: {
-        url: 'https://adonai.inverloan.com/media/inicio-loan.webp',
+        url: 'http://148.113.136.150:3001/media/inicio-loan.webp',
       },
     },
   },
@@ -259,10 +259,10 @@ export const homeTwoHeroBanner = [
     btnUrl: '/search',
     image: {
       mobile: {
-        url: 'https://adonai.inverloan.com/media/inicio-loan.webp',
+        url: 'http://148.113.136.150:3001/media/inicio-loan.webp',
       },
       desktop: {
-        url: 'https://adonai.inverloan.com/media/inicio-loan.webp',
+        url: 'http://148.113.136.150:3001/media/inicio-loan.webp',
       },
     },
   },

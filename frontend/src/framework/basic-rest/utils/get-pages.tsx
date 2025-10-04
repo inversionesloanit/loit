@@ -62,7 +62,7 @@ export type Feature = {
 
 export const fetchPages = async (route: any) => {
   const { data } = await http.get(
-    'https://adonai.inverloan.com/api/' + route.queryKey[1].route
+    process.env.NEXT_PUBLIC_REST_API_ENDPOINT + '/' + route.queryKey[1].route
   );
   return data as PageType;
 };

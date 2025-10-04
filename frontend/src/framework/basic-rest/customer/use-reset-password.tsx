@@ -9,7 +9,7 @@ async function resetPassword(input: any) {
   const {
     data: { token, user },
   } = await http.post(
-    'https://adonai.inverloan.com/api/users/reset-password',
+    process.env.NEXT_PUBLIC_REST_API_ENDPOINT + '/users/reset-password',
     input
   );
   return {

@@ -67,8 +67,8 @@ const LoginForm: React.FC<LoginFormProps> = ({ isPopup = true, className }) => {
       <div className="flex mx-auto overflow-hidden rounded-lg bg-brand-light">
         <div className="md:w-1/2 lg:w-[55%] xl:w-[60%] registration hidden md:block relative">
           <Image
-            loader={() => 'https://adonai.inverloan.com/media/login.webp'}
-            src="https://adonai.inverloan.com/media/login.webp"
+            loader={() => 'http://148.113.136.150/media/login.webp'}
+            src="http://148.113.136.150/media/login.webp"
             alt="signin Image"
             layout="fill"
           />

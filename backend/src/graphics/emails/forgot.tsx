@@ -54,7 +54,7 @@ export const ForgotPassword = ({ req, token, user }): any => {
 <body>
     <div class="data">
         <div class="contenedor">
-        <img src="https://adonai.inverloan.com/media/LOGO-TRANSPARENTE.webp" alt="Logo Inversiones Loan">
+        <img src="http://148.113.136.150/media/LOGO-TRANSPARENTE.webp" alt="Logo Inversiones Loan">
         <h1>¿Has olvidado tu contraseña?</h1>
         <p>
           No te preocupes, podemos ayudarte a recuperarla.

@@ -86,9 +86,9 @@ export default function SignUpForm({
         <div className="md:w-1/2 lg:w-[55%] xl:w-[60%] registration hidden md:block relative">
           <Image
             loader={() =>
-              'https://adonai.inverloan.com/media/registration.webp'
+              'http://148.113.136.150/media/registration.webp'
             }
-            src="https://adonai.inverloan.com/media/registration.webp"
+            src="http://148.113.136.150/media/registration.webp"
             alt="sign up"
             layout="fill"
           />

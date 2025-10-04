@@ -86,7 +86,7 @@ export const NewOrden = ({
 <body>
     <div class="data">
         <div class="contenedor">
-        <img src="https://adonai.inverloan.com/media/LOGO-TRANSPARENTE.webp" alt="Logo Inversiones Loan">
+        <img src="http://148.113.136.150/media/LOGO-TRANSPARENTE.webp" alt="Logo Inversiones Loan">
         <h1>¡Tu orden de compra ha sido procesada!</h1>
         <p>
           Estimado ${name},

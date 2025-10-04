@@ -5,7 +5,7 @@ async function changePassword(input: any) {
   const {
     data: { token, user },
   } = await http.post(
-    'https://adonai.inverloan.com/api/users/forgot-password',
+    process.env.NEXT_PUBLIC_REST_API_ENDPOINT + '/users/forgot-password',
     input
   );
   return {

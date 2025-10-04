@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 const ErrorInformation: React.FC = () => {
   const { t } = useTranslation('common');
   const backgroundThumbnail =
-    'https://adonai.inverloan.com/media/FONDO-ERROR-404.jpg';
+    'http://148.113.136.150/media/FONDO-ERROR-404.jpg';
   return (
     <div
       className="text-center px-12 py-16 sm:py-20 lg:py-24 xl:py-32 flex items-center justify-center bg-cover bg-no-repeat bg-center"

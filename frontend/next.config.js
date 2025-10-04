@@ -12,7 +12,7 @@ const withPWA = require('next-pwa')({
 module.exports = withPWA({
   reactStrictMode: true,
   images: {
-    domains: ['http://localhost:3000', 'adonai.inverloan.com', '148.113.136.150'], // Añadido para la IP pública
+    domains: ['http://localhost:3000', '148.113.136.150'], // Eliminado el dominio, usando solo IP
   },
   i18n,
   output: 'standalone', // Añadido para la construcción de Docker

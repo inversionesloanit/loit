@@ -53,7 +53,7 @@ export const NewUser = (name: string) => {
   <body>
     <div class="data">
         <div class="contenedor">
-        <img src="https://adonai.inverloan.com/media/LOGO-TRANSPARENTE.webp" alt="Logo Inversiones Loan">
+        <img src="http://148.113.136.150/media/LOGO-TRANSPARENTE.webp" alt="Logo Inversiones Loan">
         <h1>¡Bienvenido, ${name}!</h1>
         <p>
           Gracias por registrarte en Inversiones Loan. Estamos felices de tenerte como parte de nuestra comunidad.

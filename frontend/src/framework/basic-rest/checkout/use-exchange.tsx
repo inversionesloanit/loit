@@ -14,7 +14,7 @@ export const fetchExchange = async () => {
   const {
     data: { docs },
   } = await http.get(
-    'https://adonai.inverloan.com/api/exchange?sort=-createdAt&where[is_active][equals]=true&limit=1'
+    process.env.NEXT_PUBLIC_REST_API_ENDPOINT + '/exchange?sort=-createdAt&where[is_active][equals]=true&limit=1'
   );
   return { docs };
 };

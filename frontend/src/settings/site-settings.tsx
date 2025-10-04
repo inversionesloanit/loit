@@ -21,7 +21,7 @@ export const siteSettings = {
     address: '',
   },
   logo: {
-    url: 'https://adonai.inverloan.com/media/logo-blanco-loan.webp',
+    url: 'http://148.113.136.150:3001/media/logo-blanco-loan.webp',
     alt: 'LoanShop',
     href: '/',
     width: 115,

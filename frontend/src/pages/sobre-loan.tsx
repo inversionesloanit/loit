@@ -25,7 +25,7 @@ export default function TermsPage() {
       <div
         className="flex justify-center w-[1920px] h-[300px] lg:h-96 2xl:h-[315px] w-full bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url(https://adonai.inverloan.com/media/nosotros.jpg)`,
+          backgroundImage: `url(http://148.113.136.150:3001/media/nosotros.jpg)`,
         }}
       ></div>
       <div className="py-8 lg:py-16 2xl:py-20">
