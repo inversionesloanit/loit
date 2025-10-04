@@ -34,10 +34,10 @@ const Admins: CollectionConfig = {
     useAsTitle: "email",
   },
   access: {
-    read: ({ req: { user } }): boolean => user?.users.read,
-    update: ({ req: { user } }): boolean => user?.users.update,
-    create: ({ req: { user } }): boolean => user?.users.create,
-    delete: ({ req: { user } }): boolean => user?.users.delete,
+    read: (): boolean => true, // Temporalmente permitir lectura para todos
+    update: (): boolean => true, // Temporalmente permitir actualización para todos
+    create: (): boolean => true, // Temporalmente permitir creación para todos
+    delete: (): boolean => true, // Temporalmente permitir eliminación para todos
   },
   hooks: {
     afterChange: [afterChangeHook],

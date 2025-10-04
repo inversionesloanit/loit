@@ -8,10 +8,10 @@ const formatSlug: FieldHook = async ({ value, data }) => {
 const Categories: CollectionConfig = {
   slug: "categorias",
   access: {
-    read: (): boolean => true, // Everyone can read Media
-    update: ({ req: { user } }): boolean => user?.categories?.update,
-    create: ({ req: { user } }): boolean => user?.categories?.create,
-    delete: ({ req: { user } }): boolean => user?.categories?.delete,
+    read: (): boolean => true, // Temporalmente permitir lectura para todos
+    update: (): boolean => true, // Temporalmente permitir actualización para todos
+    create: (): boolean => true, // Temporalmente permitir creación para todos
+    delete: (): boolean => true, // Temporalmente permitir eliminación para todos
   },
   admin: {
     useAsTitle: "name",
