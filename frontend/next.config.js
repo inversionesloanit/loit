@@ -15,6 +15,7 @@ module.exports = withPWA({
     domains: ['http://localhost:3000', 'adonai.inverloan.com'],
   },
   i18n,
+  output: 'standalone', // Añadido para la construcción de Docker
   ...(process.env.NODE_ENV === 'production' && {
     typescript: {
       ignoreBuildErrors: true,
