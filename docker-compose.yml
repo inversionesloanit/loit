@@ -38,7 +38,7 @@ services:
     ports:
       - "5000:3000" # Mapea el puerto 3000 del contenedor a 5000 en el host para evitar conflicto con el backend
     environment:
-      NEXT_PUBLIC_SERVER_URL: http://backend:3000 # El frontend se conecta al backend usando el nombre del servicio Docker
+      NEXT_PUBLIC_REST_API_ENDPOINT: http://148.113.136.150:3001 # URL pública del backend para el frontend
       PORT: 3000 # Puerto interno del contenedor Next.js
       NODE_ENV: production
     depends_on:
