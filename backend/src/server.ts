@@ -42,4 +42,6 @@ payload.init({
 
 // Add your own express routes here
 
-app.listen(8000);
+app.listen(process.env.PORT || 3000, () => {
+  payload.logger.info(`Backend is running on port ${process.env.PORT || 3000}`);
+});
