@@ -37,11 +37,10 @@ payload.init({
   express: app,
   onInit: () => {
     payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`);
+    app.listen(process.env.PORT || 3000, () => {
+      payload.logger.info(`Backend is running on port ${process.env.PORT || 3000}`);
+    });
   },
 });
 
 // Add your own express routes here
-
-app.listen(process.env.PORT || 3000, () => {
-  payload.logger.info(`Backend is running on port ${process.env.PORT || 3000}`);
-});
