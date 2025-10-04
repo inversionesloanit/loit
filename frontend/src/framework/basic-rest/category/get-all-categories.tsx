@@ -5,16 +5,22 @@ import { useQuery } from 'react-query';
 
 export const fetchCategories = async ({ queryKey }: any) => {
   const [_key, _params] = queryKey;
-  const {
-    data: { docs, totalDocs },
-  } = await http.get(
-    API_ENDPOINTS.CATEGORIES +
-      '?limit=' +
-      queryKey[1].limit +
-      queryKey[1].where +
-      '&sort=name'
-  );
-  return { categories: { data: docs as Category[] } };
+  try {
+    const response = await http.get(
+      API_ENDPOINTS.CATEGORIES +
+        '?limit=' +
+        queryKey[1].limit +
+        queryKey[1].where +
+        '&sort=name'
+    );
+    console.log('API Response for Categories:', response);
+    const { data: { docs, totalDocs } } = response;
+    return { categories: { data: docs as Category[] } };
+  } catch (error) {
+    console.error('Error fetching categories:', error);
+    // Puedes lanzar el error o devolver una estructura de datos vacía/por defecto
+    throw new Error('Failed to fetch categories');
+  }
 };
 
 export const useCategoriesQuery = (options: CategoriesQueryOptionsType) => {
