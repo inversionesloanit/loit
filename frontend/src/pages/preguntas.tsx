@@ -26,7 +26,8 @@ export default function TermsPage() {
             <AccordionWT key={`${item.title}-${index}`} item={item} />
           ))}
           <p>
-            Horario de atención: De lunes a domingos de 8:00 a.m. a 7:00 p.m.
+            Horario de atención: De Lunes a Sabado de 8:00 a.m. a 7:00 p.m.
+                                            Domingos de 8:30 a.m. a 3:00 p.m.
           </p>
         </div>
       </Container>
