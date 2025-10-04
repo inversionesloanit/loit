@@ -45,6 +45,8 @@ export default buildConfig({
     "https://www.front.inverloan.com",
     "https://localhost:8000",
     "http://localhost:8000",
+    "http://148.113.136.150:3001", // Añadido para el acceso al backend
+    "http://148.113.136.150:5000", // Añadido para el acceso del frontend
   ],
   csrf: [
     "http://localhost:8080",
@@ -59,6 +61,8 @@ export default buildConfig({
     "https://www.front.inverloan.com",
     "https://localhost:8000",
     "http://localhost:8000",
+    "http://148.113.136.150:3001", // Añadido para el acceso al backend
+    "http://148.113.136.150:5000", // Añadido para el acceso del frontend
   ],
   rateLimit: {
     trustProxy: true,
