@@ -3,9 +3,22 @@ import payload from "payload";
 import nodemailer from "nodemailer";
 import mailjetTransport from "nodemailer-mailjet-transport";
 import path from "path";
+import cors from "cors";
 
 require("dotenv").config();
 const app = express();
+
+const allowedOrigins = [
+  'http://148.113.136.150',
+  'http://localhost:3000', // Asumiendo que el frontend se ejecuta en localhost:3000 durante el desarrollo
+  'http://localhost:3001', // Otro posible puerto de desarrollo
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+}));
+
 app.use("/assets", express.static(path.resolve(__dirname, "./assets")));
 
 // Redirect root to Admin panel
